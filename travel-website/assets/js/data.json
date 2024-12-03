@@ -1,0 +1,18 @@
+[
+    {
+      "name": "Paris",
+      "description": "The City of Lights and Love.",
+      "image": "assets/images/paris.jpg"
+    },
+    {
+      "name": "Bali",
+      "description": "A tropical paradise.",
+      "image": "assets/images/bali.jpg"
+    },
+    {
+      "name": "Tokyo",
+      "description": "A bustling hub of culture and technology.",
+      "image": "assets/images/tokyo.jpg"
+    }
+  ]
+  

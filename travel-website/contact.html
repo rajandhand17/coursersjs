@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - TravelBloom</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">TravelBloom</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you! Whether you have questions, feedback, or partnership opportunities, feel free to reach out to us.</p>
+      
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <a href="#"><img src="assets/images/social-icons/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="assets/images/social-icons/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="assets/images/social-icons/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="assets/images/social-icons/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </footer>
+
+  <script>
+    emailjs.init('O1GYz3fhbF8gZP5cN'); // Replace with your EmailJS public key
+  
+    document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent form from refreshing the page
+  
+      const serviceID = 'service_ysslwh8'; // Replace with your service ID
+      const templateID = 'template_oi9mc9m'; // Replace with your template ID
+  
+      emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+          alert('Your message has been sent successfully!');
+          document.querySelector('form').reset(); // Reset form fields
+        }, (error) => {
+          alert('Failed to send the message. Please try again later.');
+          console.log(error);
+        });
+    });
+  </script>
+  
+</body>
+</html>
