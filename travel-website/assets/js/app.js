@@ -30,7 +30,7 @@ const displayDestinations = (data) => {
 const filterRecommendations = () => {
   const query = document.querySelector('#search').value.toLowerCase();
   const filtered = destinations.filter(dest =>
-    dest.name.toLowerCase().includes(query) || dest.description.toLowerCase().includes(query)
+    dest.name.toLowerCase().includes(query) || dest.description.toLowerCase().includes(query) || dest.category.toLowerCase().includes(query)
   );
   displayDestinations(filtered);
 };

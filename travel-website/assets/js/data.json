@@ -1,18 +1,55 @@
 [
     {
       "name": "Paris",
+      "category":"country",
       "description": "The City of Lights and Love.",
       "image": "assets/images/paris.jpg"
     },
     {
       "name": "Bali",
+      "category":"beach",
       "description": "A tropical paradise.",
       "image": "assets/images/bali.jpg"
     },
     {
       "name": "Tokyo",
+      "category":"country",
       "description": "A bustling hub of culture and technology.",
       "image": "assets/images/tokyo.jpg"
+    },
+    
+    {
+      "name": "Kalesh",
+      "category":"temple",
+      "description": "A indian temple.",
+      "image": "assets/images/temple.jpg"
+    },
+    {
+      "name": "Somnath",
+      "category":"temple",
+      "description": "A indian temple.",
+      "image": "assets/images/temple1.jpg"
+    },
+    {
+      "name": "Maldives",
+      "category":"beach",
+      "description": "A famous pleace for the beaches",
+      "image": "assets/images/beach.jpg"
+    },
+    {
+      "name": "indonesia",
+      "category":"beach",
+      "description": "A famous place for tourisam",
+      "image": "assets/images/beach.jpg"
+    },
+    {
+      "name": "Boudha Stupa",
+      "category":"temple",
+      "description": "A famous place for temple in nepal",
+      "image": "assets/images/temple3.jpg"
     }
+    
+
+    
   ]
   
