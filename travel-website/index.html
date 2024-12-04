@@ -9,31 +9,23 @@
 <body>
   <header>
     <nav>
-        <div class="logo">TravelBloom</div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search destinations...">
+        <button id="searchButton">Search</button>
+        <button id="clearButton">Clear</button>
+      </div>
+    </nav>
   </header>
 
   <main id="home">
-    <section id="hero">
-      <div class="content">
-        <h1>Discover Your Next Adventure</h1>
-        <p>Explore the world with our handpicked destinations and cultural experiences.</p>
-        <button onclick="bookNow()">Book Now</button>
-      </div>
-      <div class="search-bar">
-        <input type="text" id="search" placeholder="Search destinations..." oninput="filterRecommendations()">
-      </div>
-    </section>
-
-    <section id="recommendations">
-      <h2>Popular Destinations</h2>
-      <div id="destinations-container"></div>
+    
+    <section id="destinations-container">
+      <!-- Destination cards will be injected here dynamically -->
     </section>
   </main>
 
